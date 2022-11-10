@@ -2,6 +2,10 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## What i learned while building this project :
+
+React Routing - React context API - Chat Engine
+
 ## How to use this project :
 
 1- Git clone "its github repo link".
