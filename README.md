@@ -4,7 +4,7 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## What i learned while building this project :
 
-React Routing - React context API - Chat Engine
+React Routing - React context API - Chat Engine - Social authentification (firebase)
 
 ## How to use this project :
 
