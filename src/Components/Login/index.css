@@ -1,0 +1,41 @@
+.login-bg {
+    position: fixed;
+    min-height: 100vh;
+    width: 100%;
+    background-color: rgb(78, 0, 180);
+}
+
+.login-wrapper {
+    width: 600px;
+    height: 300px;
+    padding: 15px;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+.login-wrapper h1 {
+    margin-bottom: 3rem;
+}
+
+.login-container {
+    gap: 1rem;
+}
+
+.login-button {
+    height: 50px;
+    color: #fff;
+    padding: 1rem;
+    cursor: pointer; 
+    border-radius: 10px;
+    background: #4e00b4;
+}
+
+.login-button h2 {
+    font-size: 0.8rem;
+}
+
+.anticon {
+    font-size: 1.5rem;
+    margin-right: 10px;
+    color: #fff;
+}
