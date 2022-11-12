@@ -2,9 +2,12 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Status : Not completed
+
+
 ## What i learned while building this project :
 
-React Routing - React context API - Chat Engine - Social authentification (firebase)
+React Routing - React context API - Social authentification (firebase)
 
 ## How to use this project :
 
