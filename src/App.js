@@ -21,7 +21,7 @@ function App() {
         <AuthProvider>
           <Routes>
             <Route path="/" element={<Login />} />
-            {/*<Route path="/Chats" element={<Chats />} />*/}
+            <Route path="/Chats" element={<Chats />} />
           </Routes>
         </AuthProvider>
       </Router>

@@ -2,8 +2,8 @@
 /*               DEPENDENCIES              */
 /* --------------------------------------- */
 // Packages
-import { useContext, useState, useEffect } from "react";
-import { useHistory } from 'react-router-dom';
+import React, { useContext, useState, useEffect } from "react";
+import { useNavigate } from 'react-router-dom';
 
 // FIREBASE CONTANTS
 import { authentification } from '../../Shared/Utils/firebase';
@@ -14,23 +14,25 @@ import { authentification } from '../../Shared/Utils/firebase';
 const AuthContext = React.createContext();
 export const useAuth = ()  => useContext(AuthContext);
 
-// react children will render all the css pass into this provider
 function AuthProvider({ children }) {
     const [loading, setLoading] = useState(true);
-    const [user, setUser] = useState({});
-    const history = useHistory();
+    const [user, setUser] = useState(null);
+    const Navigate = useNavigate();
 
     useEffect(() => {
         authentification.onAuthStateChanged((firebaseUser) => {
             setUser(firebaseUser);
             setLoading(false);
-            history.push('/Chats')
+
+            if (firebaseUser) {
+                Navigate('/Chats');
+            }
         })
-    }, [user, history])
+    }, [user, Navigate])
 
     const value = { user };
     return (
-    /* ************* RENDERING ********** */
+    /* ************* RENDERING *********** */
         <AuthContext.Provider value={value}>
             {!loading && children}
         </AuthContext.Provider>
