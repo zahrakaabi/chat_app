@@ -5,7 +5,7 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 
 // UI Local Components
-import { Login, Chats } from './Components';
+import { Login, Chats, AuthProvider } from './Components';
 
 // Styles
 import './Shared/Styles/global.css';
@@ -18,12 +18,12 @@ function App() {
   return (
     <div className="App">
       <Router>
-        {/*<AuthentificationProvider>*/}
+        <AuthProvider>
           <Routes>
             <Route path="/" element={<Login />} />
             {/*<Route path="/Chats" element={<Chats />} />*/}
           </Routes>
-        {/*</AuthentificationProvider>*/}
+        </AuthProvider>
       </Router>
     </div>
   );
