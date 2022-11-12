@@ -1,8 +1,8 @@
-## Chat App [faacebook messenger clone]
+## Chat App [facebook messenger clone]
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Status : Not completed
+## Status : IN PROGRESS
 
 
 ## What i learned while building this project :
